@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <center>
-      <h1 style={{textAlign:'center',fontSize:'80px'}}>Grocery Store</h1>
+      <h1 style={{textAlign:'center',fontSize:'80px',fontStyle:'italic'}}>Grocery Store</h1>
       <ProductList products={products} addToCart={addToCart} />
       <Cart cartItems={cart} removeFromCart={removeFromCart} />
       </center>

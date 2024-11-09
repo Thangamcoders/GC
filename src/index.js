@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css'; // Global styles (optional, if you want to add custom styles)
+import App from './App'; // Main App component
+import { BrowserRouter as Router } from 'react-router-dom'; // If you're using React Router for routing
 
+// Create root element for React 18+ versions (using the new root API)
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Render the App component wrapped with Router (for routing functionality)
+root.render(
+  <Router>
+    <App />
+  </Router>
+);
